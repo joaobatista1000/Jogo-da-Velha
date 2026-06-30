@@ -73,6 +73,11 @@ int jogo(){
         int x2, y2;
 
         // JOGADOR 1
+        if (contador == 9) {
+            printf("\nO jogo empatou! Deu velha!\n");
+            break;
+        }
+        
         printf("\n(Jogador 1)\nDigite a coordenada de seu interesse (X Y): ");
         if(scanf("%d %d", &x1, &y1) != 2){
             printf("\nErro:\nEntrada invalida! Digite apenas numeros inteiros.\n\n");
@@ -91,7 +96,7 @@ int jogo(){
         exibirJogo(array);
         running = validador(array);
 
-        if (running != true && contador == 9) {
+        if (contador == 9) {
             printf("\nO jogo empatou! Deu velha!\n");
             break;
         }
