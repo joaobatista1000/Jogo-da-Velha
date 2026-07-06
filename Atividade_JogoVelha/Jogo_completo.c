@@ -10,18 +10,17 @@ int main(){
         scanf("%d",&escolha_jogador);
         switch(escolha_jogador){
             case 1:
-            system("cls");
-            system("gcc \"..\\Jogo_normal\\main_normal.c\" \"..\\Jogo_normal\\partida.c\" \"..\\Jogo_normal\\tabuleiro.c\" -o \"..\\Jogo_normal\\jogo.exe\" && \"..\\Jogo_normal\\jogo.exe\"");
-            system("pause");
-            system("cls");
-            break;
-            case 2:
-            case 3:
-                system("cls");
-                //Função BR3
-                system("pause");
-                system("cls");
+                system("clear");
+                system("gcc \"../Jogo_normal/main_normal.c\" \"../Jogo_normal/partida.c\" \"../Jogo_normal/tabuleiro.c\" -o \"../Jogo_normal/jogo\" && \"../Jogo_normal/jogo\"");
+                system("clear");
                 break;
+            case 2:
+                system("clear");
+                system("gcc \"../JogoIA/jogadorIA.c\" \"../JogoIA/jogadorTeclado.c\" \"../JogoIA/partida.c\" \"../JogoIA/tabuleiro.c\" -o \"../JogoIA/jogo\" && \"../JogoIA/jogo\"");
+                system("clear");
+                break;
+            case 3:
+            break;
             case 4:
                 break;
             } 
