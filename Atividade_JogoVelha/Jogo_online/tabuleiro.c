@@ -10,26 +10,29 @@ void marcajogada(int x, int y, int tipo, int (*tabuleiro)[3]){
 }
 
 void exibirJogo(int (*tabuleiro)[3]){
-    printf("\n  0 1 2\n");
-    for(int i = 0; i < 3; i++){
-        printf("%d|", i);
-        for(int j = 0; j < 3; j++){
+   for(int i = 0 ; i < 3 ; i++){
+        printf("|");
+        for(int j = 0 ; j < 3 ; j ++){
             if(tabuleiro[i][j] == 5){
                 printf("X");
-            } else if(tabuleiro[i][j] == 1){
-                printf("O");
             } else {
-                printf(" ");
+                if(tabuleiro[i][j] == 1){
+                    printf("O");
+                } else {
+                    printf(" ");
+                }
             }
-            if(j < 2) printf("|");
+            
+            if(i != 3){
+                printf("|");
+            }
         }
-        printf("|\n");
+        printf("\n");
     }
-    printf("\n");
 }
 
 int vencedor(int soma){
-    if(soma == 15){
+    if(soma == 12){
         printf("\nO jogador X (Servidor) venceu!\n");
         return true;
     } else if(soma == 3){
