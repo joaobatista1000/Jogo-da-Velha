@@ -34,11 +34,11 @@ void exibirJogo(int coord[3][3]){
 }
 
 int vencedor(int soma){
-    if(soma == 15){
+    if(soma == 12){
         printf("\nO jogador 1 venceu!\n");
         return true;
     } else if(soma == 3){
-        printf("\nO jogador 2 venceu!\n");
+        printf("\nA IA venceu!\n");
         return true;
     }
     return false;

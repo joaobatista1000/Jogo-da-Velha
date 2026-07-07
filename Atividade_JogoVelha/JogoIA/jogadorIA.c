@@ -31,7 +31,7 @@ void jogadaIA(int (*tabuleiro)[3]) {
         else if (tabuleiro[2][0] == 0) { tabuleiro[2][0] = 1; return; }
     }
 
-    // R1 OPONENTE PERDENDO\
+    // R1 OPONENTE PERDENDO
     for (int i = 0; i < 3; i++) {
         if (tabuleiro[i][0] + tabuleiro[i][1] + tabuleiro[i][2] == 8) {
             if (tabuleiro[i][0] == 0) { tabuleiro[i][0] = 1; return; }

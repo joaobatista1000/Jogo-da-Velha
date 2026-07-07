@@ -12,12 +12,12 @@ void inicia(int souServidor){
     bool minhaVez;
 
     if (souServidor == 1) {
-        meuTipo = 5;
+        meuTipo = 4;
         tipoAdversario = 1;
         minhaVez = true;
     } else {
         meuTipo = 1;
-        tipoAdversario = 5;
+        tipoAdversario = 4;
         minhaVez = false;
     }
 
